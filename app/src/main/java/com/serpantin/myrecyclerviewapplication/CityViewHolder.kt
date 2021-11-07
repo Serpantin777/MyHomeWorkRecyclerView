@@ -16,6 +16,10 @@ class CityViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val citySizeFormatter = "${cityName.size} чел."
         citySizeTextView.text = citySizeFormatter
 
+        val cityButtonToast:Button = itemView.findViewById(R.id.city_button_toast)
+        cityButtonToast.setOnClickListener {
+            Toast.makeText(itemView.context, citySizeFormatter, Toast.LENGTH_LONG).show()
+        }
 
     }
 }
