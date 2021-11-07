@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyRecyclerViewApplication</string>
+    <string name="city">Численность</string>
 </resources>
